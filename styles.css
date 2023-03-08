@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+:root {
+    --Soft:hsl(215,51%,70);
+    --Cyan:hsl(178,100%,50%);
+    --mainbg:hsl(217,54%,11%);
+    --cardbg:hsl(216,50%,16%);
+    --line:hsl(215,32%,27%);
+    --White:hsl(0,0%,100%);
+}
+body{
+    font-family: 'Outffit';
+    background: var(--mainbg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+}
+img{max-width: 302px;max-height: 302px; border-radius: 46px; padding: 24px;}
+.container {
+    max-width: 350px;
+    background:var(--cardbg);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+}
+h1{
+    color:var(--White);
+    font-size:22px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-left: 24px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
