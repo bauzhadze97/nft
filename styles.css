@@ -2,14 +2,15 @@
 *{
     margin: 0;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 :root {
-    --Soft:hsl(215,51%,70);
+    --Soft:#8BACD9;
     --Cyan:hsl(178,100%,50%);
     --mainbg:hsl(217,54%,11%);
     --cardbg:hsl(216,50%,16%);
-    --line:hsl(215,32%,27%);
+    --line:#2E405A;
     --White:hsl(0,0%,100%);
 }
 body{
@@ -20,9 +21,16 @@ body{
     justify-content: center;
     align-items: center;
     height: calc(100vh - 1px);
+    font-size: 18px;
+    padding: 1.25rem;
 }
-img{max-width: 302px;max-height: 302px; border-radius: 46px; padding: 24px;}
+img {
+    max-width: 100%;
+    border-radius: 48px;
+}
+
 .container {
+    padding: 1.25rem;
     max-width: 350px;
     background:var(--cardbg);
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
@@ -33,10 +41,100 @@ h1{
     font-size:22px;
     font-weight: 600;
     line-height: 28px;
-    padding-left: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Outfit';
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+h1 a{
+    color: var(--White);
+    text-decoration: none;
+}
+h1 a:hover {
+    color: var(--Cyan);
+}
+h2{
+    color:var(--Soft);
+    font-size: 18px;
+    font-family: 'Outfit';
+    margin-bottom: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 22px;
+}
+.container ul {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     list-style: none;
+     border-bottom: 1px solid;
+     border-bottom-color: #2E405A;
+}
+.container ul li{
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--Cyan);
+    margin-bottom: 0.75rem;
+}
+.container ul li img {
+    width: 17px;
+    height: 17px;
+    max-width: 17px;
+}
+
+.avatar {
+    margin-top: 0.65rem;
+    display: flex;
+    align-items: center;
+}
+.creator {
+    color: var(--White);
+    padding-left: 5px;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 16px;
+}
+.avatar img{
+    width: 33px;
+    height: 33px;
+    border: 0.5px solid #FFFFFF;
+}
+p {
+    font-family: 'Outfit';
+    color: var(--Soft);
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+article {
+    position: relative;
+}
+article:hover .overlay{
+    background-color: rgb(0 255 248 / 50%);
+    opacity: 1;
+}
+.overlay img{
+    position: absolute;
+    top: 41%;
+    left: 43%;
+
+}
+
+.attribution { color: white;font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+.attribution a:hover {color: var(--Cyan);}
 
 
 
