@@ -20,20 +20,83 @@ body{
     height: 100vh;
     font-size: 18px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 main {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 section {
+    max-width: 327px;
     background: #15263F;
-box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
-border-radius: 15px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
 }
-
-
-
+.hover {
+    margin: 24px;
+}
+.image-container{
+    width: 100%;
+    position: relative;
+}
+.image-container .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+h1{
+    color: #FFFFFF;
+    padding:0 25px 12px 25px;
+    font-size: 22px;
+    font-weight: 600;
+}
+h2{
+    color: #8BACD9;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 25px 0 25px;
+}
+.icon-time{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 16px 24px;
+    font-size: 15px;
+}
+.icon-time h3{
+    color: #00FFF8;
+    margin:0 0 0 6px;
+}
+.icon-time h4{
+    color: #8BACD9;
+    font-weight: 400;
+}
+.line {
+    min-height: 1px;
+    background: #2E405A;
+    max-width: 278px;
+    margin: 0 25px 16px 25px;
+}
+section .avatar {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 0 0 24px 24px;
+}
+section .avatar img{
+    border: 1px solid #FFFFFF;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+section .avatar p{
+    color: #8BACD9;
+    font-size: 15px;
+    padding: 0 0 0 16px; 
+}
+section .avatar p strong{
+    color: #FFFFFF;
+}
 
 
 
