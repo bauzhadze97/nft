@@ -33,17 +33,29 @@ section {
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
     border-radius: 15px;
 }
-.hover {
+section .image-container{
+    width: 278px;
+    height: 278px;
+    position: relative;
+    background-color: #00A4B4;
     margin: 24px;
 }
-.image-container{
+section .image-container .hover {
+    cursor: pointer;
     width: 100%;
-    position: relative;
 }
-.image-container .overlay{
+section .image-container .icon {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
+    transform: translate(-50%, 50%);
+    display: none;
+}
+section .image-container .hover:hover {
+    opacity: 0.5;
+}
+.image-container:hover .icon{
+    display: block;
 }
 h1{
     color: #FFFFFF;
@@ -98,8 +110,20 @@ section .avatar p strong{
     color: #FFFFFF;
 }
 
+.link:hover{
+    color:var(--Cyan);
+    cursor: pointer;
+}
 
-
+@media screen and (min-width:1440px) {
+    section {
+        max-width: 350px;
+    }
+    section .image-container{
+     width: 302px;
+     height: 302px;
+    }
+}
 
 
 
